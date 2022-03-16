@@ -45,7 +45,8 @@ export default function Home(props) {
             {props.posts.map(post => (
               <div className="image" key={post.id}>
                 <h1 className={styled.title}>{post.name}</h1>
-               <img src={post.image} alt="mobile" className={styled.image} />
+                <img src={post.image} alt="mobile" className={styled.image} />
+                <p className={styled.details}>{post.details}</p>
                </div>
             ))}
           </Carousel>

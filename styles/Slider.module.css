@@ -32,3 +32,18 @@
     text-shadow: 1px 2px 3px rgba(0,0,0,0.825), 3px 6px 10px rgba(20, 20, 20, 0.849);
     z-index: 10;
 }
+
+.details {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    width: 50%;
+    background-color: rgba(136, 136, 136, 0.384);
+    padding: 0.25rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.825), 3px 6px 10px rgba(20, 20, 20, 0.849);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.445);
+    z-index: 10;
+}
