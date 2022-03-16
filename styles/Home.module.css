@@ -104,8 +104,10 @@
 }
 
 .logo {
-  height: 1em;
+  font-size: 2rem;
   margin-left: 0.5rem;
+  font-weight: 800;
+  text-shadow: 0 3px 5px rgba(0,0,0,0.225);
 }
 
 @media (max-width: 600px) {
