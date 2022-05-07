@@ -8,6 +8,32 @@ import { Carousel } from 'react-responsive-carousel';
 import ImageSlider from '../components/ImageSlider';
 import QA from '../components/QA';
 
+
+
+export const items = [
+  {
+    q: 'what is the world state',
+    a: 'we dont know',
+    id: 1
+  },
+  {
+    q: 'what is your name',
+    a: 'arne',
+    id: 2
+  },
+  {
+    q: 'Who are you',
+    a: 'barnarne',
+    id: 3
+  },
+  {
+    q: 'True or False',
+    a: 'false',
+    id: 4
+  },
+];
+
+
 export default function Home(props) {
   console.log(props.posts);
 
@@ -43,8 +69,14 @@ export default function Home(props) {
         </div>
 
         <div>
-          <QA title='fråga' desc='svar' />
-        </div>
+          {items.map(({ id, q, a }) => 
+             (
+            <div key={id}>
+              <QA title={q} desc={a} />
+            </div>
+             )
+          )}
+          </div>
       </main>
 
       <footer className={styles.footer}>
@@ -75,22 +107,3 @@ Home.getInitialProps = async function () {
     posts: data,
   };
 };
-
-export const items = [
-  {
-    question: 'what is the world state',
-    answer: 'we dont know',
-  },
-  {
-    question: 'what is the world state',
-    answer: 'we dont know',
-  },
-  {
-    question3: 'what is the world state',
-    answer3: 'we dont know',
-  },
-  {
-    question4: 'what is the world state',
-    answer4: 'we dont know',
-  },
-];

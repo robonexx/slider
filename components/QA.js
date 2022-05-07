@@ -27,8 +27,8 @@ const Desc = () => {
     <div className={styles.qa_wrapper}>
       <div className={styles.qa}>
         <h1>Q & A</h1>
-        <Title />
-        <Desc />
+        <Title title={`What is your name` } />
+        <Desc desc={`my name is what`}/>
       </div>
     </div>
   );  
